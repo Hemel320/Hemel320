@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>শাহরিয়ার কবির হিমেল</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Library for scroll animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- FontAwesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVU6UuX0fP4HX1NwIaF85cIgIXYxePcF9cRXE8XNZDfL1BbVYFQROz+pO3dhQKTXBv9f8zP3Rd8Q2rm1WJjrGw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- Fixed Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-logo">🏵️</div>
+    <ul class="nav-links">
+      <li><a href="#home" title="হোম"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="#courses" title="কোর্স"><i class="fa-solid fa-graduation-cap"></i></a></li>
+      <li><a href="#testimonials" title="রিভিউ"><i class="fa-solid fa-comments"></i></a></li>
+      <li><a href="#videos" title="ভিডিও"><i class="fa-solid fa-video"></i></a></li>
+      <li><a href="#blog" title="ব্লগ"><i class="fa-solid fa-blog"></i></a></li>
+      <li><a href="#contact" title="যোগাযোগ"><i class="fa-solid fa-envelope"></i></a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="welcome-frame" data-aos="fade-down">
+    <img src="images/banner.jpg" alt="স্বাগতম ব্যানার" class="welcome-banner" />
+  </section>
+
+  <!-- হোম সেকশনে ঘড়ি, তারিখ এবং ভর্তি সংখ্যা -->
+  <div class="home-info" data-aos="fade-up">
+    <div class="info-box">
+      <i class="fa-regular fa-clock fa-2x"></i>
+      <h3>ঘড়ি</h3>
+      <p id="clock"></p>
+    </div>
+    <div class="info-box">
+      <i class="fa-regular fa-calendar-days fa-2x"></i>
+      <h3>আজকের তারিখ</h3>
+      <p id="currentDate"></p>
+    </div>
+    <div class="info-box">
+      <i class="fa-solid fa-user-graduate fa-2x"></i>
+      <h3>ভর্তি ছাত্রসংখ্যা</h3>
+      <p id="studentCount">১০৫০</p> <!-- তুমি ইচ্ছে করলে ডায়নামিক করতে পারো -->
+    </div>
+  </div>
+
+  <!-- স্লাইডশো -->
+  <div class="slideshow" data-aos="fade-up">
+    <div class="slide active"><img src="images/himel1.jpg" alt="ছবি ১" /></div>
+    <div class="slide"><img src="images/himel3.jpg" alt="ছবি ৩" /></div>
+    <div class="slide"><img src="images/himel4.jpg" alt="ছবি ৪" /></div>
+    <div class="slide"><img src="images/himel5.jpg" alt="ছবি ৫" /></div>
+    <div class="slide"><img src="images/himel6.jpg" alt="ছবি ৬" /></div>
+    <div class="slide"><img src="images/himel7.jpg" alt="ছবি ৭" /></div>
+    <div class="slide"><img src="images/himel8.jpg" alt="ছবি ৮" /></div>
+    <button class="nav-btn prev">&#10094;</button>
+    <button class="nav-btn next">&#10095;</button>
+  </div>
+
+  <h2 data-aos="fade-up" id="courses" style="text-align:center; margin-top:50px;">
+    আমার ওয়েবসাইটে আসার জন্য আপনাকে অসংখ্য ধন্যবাদ
+  </h2>
+
+  <div class="address" data-aos="fade-up">
+    <h3>📍ফ্রিতে কি কি শিখতে পারবেন:</h3>
+    <p>
+      এডভান্স লেভেলের ভিডিও শুট<br />
+      মোবাইল দিয়ে এডিট করা<br />
+      AI দিয়ে সহজেই ভিডিও তৈরি<br />
+      ফেসবুকে ও ইউটিউবে আপলোড করে ইনকাম
+    </p>
+  </div>
+
+  <div class="hobbies" data-aos="fade-up">
+    <h3>🎯 এছাড়াও পাবেন পেইড কোর্স</h3>
+    <ul>
+      <li>ডাইনামিক ভিডিওগ্রাফি - ১৫০০/-</li>
+      <li>টপ লেভেলের ওয়েব ডিজাইন - ২০০০/-</li>
+      <li>কম সময়ে এড তৈরি করা - ১০০০/-</li>
+      <li>AI দিয়ে অ্যাপ ডিজাইন - ৩০০০/-</li>
+    </ul>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials" data-aos="fade-up">
+    <h2>🎤 শিক্ষার্থীদের রিভিউ</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>“হিমেল ভাইয়ের কোর্স থেকে অনেক কিছু শিখেছি!” — রানা</p>
+      </div>
+      <div class="testimonial">
+        <p>“এই কোর্স আমার ক্যারিয়ার বদলে দিয়েছে।” — সারা</p>
+      </div>
+      <div class="testimonial">
+        <p>“ভিডিও এডিটিং এত সহজ হতে পারে ভাবতাম না।” — আরিফ</p>
+      </div>
+    </div>
+    <button class="testimonial-btn prev">&#10094;</button>
+    <button class="testimonial-btn next">&#10095;</button>
+  </section>
+
+  <!-- Video Tutorials Section -->
+  <section id="videos" data-aos="fade-up" style="max-width: 800px; margin: 50px auto; text-align:center;">
+    <h2>▶️ ভিডিও টিউটোরিয়ালস</h2>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog" data-aos="fade-up" style="max-width: 800px; margin: 50px auto;">
+    <h2>📝 ব্লগ ও টিপস</h2>
+    <article>
+      <h3>টপ ৫ ভিডিও এডিটিং অ্যাপ</h3>
+      <p>আজকের যুগে ভিডিও এডিটিং অনেক জনপ্রিয়, এখানে আমি পাঁচটি সহজ ও শক্তিশালী ভিডিও এডিটিং অ্যাপ নিয়ে লিখেছি...</p>
+    </article>
+    <article>
+      <h3>AI দিয়ে কীভাবে সোশ্যাল মিডিয়া পোস্ট বানাবেন?</h3>
+      <p>AI টুলস ব্যবহার করে খুব দ্রুত এবং সহজে আকর্ষণীয় সোশ্যাল মিডিয়া পোস্ট তৈরি করা যায়...</p>
+    </article>
+  </section>
+
+  <!-- Contact Form -->
+  <div class="contact-form" id="contact" data-aos="fade-up">
+    <h2>📞 যোগাযোগ করুন</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="আপনার নাম" required />
+      <input type="email" name="email" placeholder="আপনার ইমেইল" required />
+      <textarea name="message" placeholder="আপনার মন্তব্য" rows="5" required></textarea>
+      <button type="submit">পাঠান</button>
+      <p id="formStatus"></p>
+    </form>
+  </div>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/yourphonenumber" target="_blank" class="whatsapp-btn" title="WhatsApp-এ কথা বলুন!">
+    ✉️
+  </a>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
